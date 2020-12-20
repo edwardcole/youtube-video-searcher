@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The web browser?</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <iframe src="" name="iframe" width="560" height="315" id="iframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <p>to use this you just type the video id of your desired video</p>
+        <image src="./pro.png"><br>
+        <button id="button">Go to youtube video</button>
+        <textarea id="address"></textarea>
+        <script>
+            document.getElementById("button").addEventListener("click",function() {
+                document.getElementById("iframe").src = "https://www.youtube.com/embed/"+document.getElementById("address").value+""
+            })
+        </script>
+    </body>
+
+</html>
